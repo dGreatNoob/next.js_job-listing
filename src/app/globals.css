@@ -1,0 +1,31 @@
+/* Import Font Face */
+@font-face {
+  font-family: 'Clash Display Variable';
+  src: url('/src/app/fonts/Clash-Display-Variable/ClashDisplay-Bold.woff2') format('woff2');
+  font-weight: 200 700;
+  font-display: swap;
+}
+
+/* Tailwind Base Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Variables for Light/Dark Mode */
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a1a;
+    --foreground: #f5f5f5;
+  }
+}
+
+/* Apply Clash Display Variable Font */
+body {
+  font-family: 'Clash Display Variable', sans-serif;
+}
+
